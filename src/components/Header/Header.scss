@@ -1,0 +1,34 @@
+.navbar {
+  max-width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 0.5em 10%;
+	justify-content: space-between;
+
+  .navbar-logo {
+		margin: auto 0;
+		font-weight: 500;
+		font-size: 1.4em;
+	}
+	
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+		flex-direction: row;
+		
+		.nav-item{
+			text-transform: capitalize;
+			margin: auto .4em;
+			font-size: 1.2em;
+			border-radius: 20px;
+			padding: 0.3em 1em;
+
+			&:hover{
+				background-color: aliceblue;
+				color: black;
+				cursor: pointer;
+			}
+		}
+  }
+}
