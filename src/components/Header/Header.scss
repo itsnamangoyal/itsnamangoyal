@@ -3,32 +3,37 @@
   background-color: black;
   color: white;
   display: flex;
-  padding: 0.5em 10%;
-	justify-content: space-between;
+  padding: 0.3em 10%;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
 
   .navbar-logo {
-		margin: auto 0;
-		font-weight: 500;
-		font-size: 1.4em;
-	}
-	
+    margin: auto 0;
+    font-weight: 400;
+    font-size: 1.6em;
+    text-transform: uppercase;
+  }
+
   .navbar-nav {
     list-style: none;
     display: flex;
-		flex-direction: row;
-		
-		.nav-item{
-			text-transform: capitalize;
-			margin: auto .4em;
-			font-size: 1.2em;
-			border-radius: 20px;
-			padding: 0.3em 1em;
+    flex-direction: row;
 
-			&:hover{
-				background-color: aliceblue;
-				color: black;
-				cursor: pointer;
-			}
-		}
+    .nav-item {
+      font-weight: 300;
+      text-transform: capitalize;
+      margin: auto 0.4em;
+      font-size: 1.5em;
+      border-radius: 2em;
+      padding: 0.2em 0.8em;
+
+      &:hover {
+        background-color: aliceblue;
+        color: black;
+        cursor: pointer;
+      }
+    }
   }
 }

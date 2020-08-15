@@ -13,7 +13,9 @@ const About = () => {
         </p>
         <p className="lower">
           I am currently pursuing my Bachelors of Technolody in Information
-          Technology, and I love to design and develop websites.{" "}
+          Technology, and I love to design and develop websites.
+        </p>
+        <p>
           <span>I strive to make web a beautiful place.</span>
         </p>
       </div>
