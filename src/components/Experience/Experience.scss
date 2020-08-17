@@ -1,0 +1,144 @@
+.experience-section {
+  position: relative;
+  padding: 5em 10%;
+  background-color: #0086e8;
+  transition: all 2s;
+  height: fit-content;
+
+  .arrow {
+    width: 3%;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    &#right {
+      right: 5%;
+      transform: rotateY(180deg);
+      &:active {
+        transform: scale(1.4) translateX(1em) rotateY(180deg);
+      }
+    }
+    &#left {
+      left: 5%;
+      &:active {
+        transform: scale(1.4) translateX(-1em);
+      }
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .post {
+    // position: absolute;
+    top: 0;
+    background-color: #006087;
+    color: white;
+    border: 0.18em solid white;
+    padding: 5em 7%;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+
+        .position {
+          font-size: 2em;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        .organisation {
+          font-size: 1.7em;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: #ffa24d;
+        }
+      }
+      .right {
+        .time {
+          font-size: 1.5em;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .points {
+      padding: 1em;
+      margin: 0;
+      font-size: 1.4em;
+
+      .point {
+        margin: 1em auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .experience-section {
+    .post {
+      padding: 3em 5%;
+
+      .top {
+        .left {
+          .position {
+            font-size: 1.7em;
+          }
+          .organisation {
+            font-size: 1.4em;
+          }
+        }
+        .right {
+          .time {
+            font-size: 1.4em;
+          }
+        }
+      }
+
+      .points {
+        padding: 1em;
+        font-size: 1.3em;
+
+        .point {
+          margin: 0.8em auto;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .experience-section {
+    .post {
+      padding: 2em 4%;
+
+      .top {
+        flex-direction: column;
+        .left {
+          .position {
+            font-weight: 600;
+            font-size: 1.6em;
+          }
+          .organisation {
+            font-size: 1.4em;
+          }
+        }
+        .right {
+          .time {
+            float: right;
+            text-align: right;
+            font-size: 1.4em;
+          }
+        }
+      }
+
+      .points {
+        font-size: 1.2em;
+
+        .point {
+          margin: 0.7em auto;
+        }
+      }
+    }
+  }
+}

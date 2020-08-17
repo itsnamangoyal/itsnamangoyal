@@ -2,7 +2,7 @@ import React from "react";
 
 import "./About.scss";
 
-import my_pic from "../../Assets/my_pic.png";
+import my_pic from "../../Assets/my_pic.jpeg";
 
 const About = () => {
   return (

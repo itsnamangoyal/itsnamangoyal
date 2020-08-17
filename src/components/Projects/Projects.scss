@@ -1,0 +1,125 @@
+.projects-section {
+  position: relative;
+  padding: 5em 10%;
+  background-color: #231f20;
+  transition: all 2s;
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    width: 3%;
+
+    cursor: pointer;
+    &#right {
+      right: 5%;
+      transform: rotateY(180deg);
+      &:active {
+        transform: scale(1.4) translateX(1em) rotateY(180deg);
+      }
+    }
+    &#left {
+      left: 5%;
+      &:active {
+        transform: scale(1.4) translateX(-1em);
+      }
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      line-height: 2em;
+
+      .name {
+        font-weight: bold;
+        font-size: 2em;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+
+      .for {
+        font-weight: 600;
+        font-size: 1.8em;
+        line-height: 2em;
+        // letter-spacing: 0.02em;
+        color: #ffa24d;
+        text-transform: capitalize;
+      }
+    }
+    .right {
+      a {
+        text-decoration: none;
+        button {
+          border: none;
+          font-weight: 600;
+          font-size: 1.6em;
+          align-items: center;
+          letter-spacing: 0.02em;
+          color: #191a1d;
+          background-color: #ffa24d;
+          border-radius: 10px;
+          padding: 0.2em 0.3em;
+          text-transform: uppercase;
+          outline: none;
+          &:hover {
+            transform: scale(1.1);
+          }
+          &:active {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .projects-section {
+    .top {
+      .left {
+        .name {
+          font-weight: 600;
+          font-size: 1.7em;
+        }
+        .for {
+          font-size: 1.5em;
+        }
+      }
+      .right {
+        a {
+          button {
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects-section {
+    .top {
+      .left {
+        .name {
+          font-size: 1.5em;
+        }
+        .for {
+          font-size: 1.3em;
+        }
+      }
+      .right {
+        a {
+          button {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}

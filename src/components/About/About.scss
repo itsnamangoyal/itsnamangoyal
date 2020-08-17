@@ -17,11 +17,42 @@
   .right {
     margin: auto 0;
     padding: 5em 4em 0 4em;
-    width: 14em;
+    width: 20em;
     img {
       width: 100%;
       height: auto;
       box-shadow: 0px -40px 0 1em black;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-section {
+    flex-direction: column;
+    justify-content: center;
+    padding: 8em 10%;
+
+
+    .left {
+      margin: auto;
+      max-width: none;
+      font-size: 2.1em;
+    }
+    .right {
+      margin: auto;
+      width: 18em;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-section {
+    padding: 6em 10%;
+
+    .left {
+      font-size: 1.8em;
+    }
+    .right {
+      width: 15em;
     }
   }
 }
