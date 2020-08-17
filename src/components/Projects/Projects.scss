@@ -82,6 +82,7 @@
 
 @media screen and (max-width: 1024px) {
   .projects-section {
+    padding: 3em 10%;
     .top {
       .left {
         .name {
@@ -104,6 +105,7 @@
 }
 @media screen and (max-width: 768px) {
   .projects-section {
+    padding: 2em 10%;
     .top {
       .left {
         .name {
@@ -117,6 +119,30 @@
         a {
           button {
             font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .projects-section {
+    padding: 1em 10%;
+    .top {
+      flex-direction: column;
+      .left {
+        .name {
+          font-size: 1.3em;
+        }
+        .for {
+          font-size: 1.1em;
+        }
+      }
+      .right {
+        a {
+          button {
+            font-size: 0.9em;
           }
         }
       }

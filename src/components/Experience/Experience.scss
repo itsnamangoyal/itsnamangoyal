@@ -142,3 +142,38 @@
     }
   }
 }
+
+@media screen and (max-width: 420px) {
+  .experience-section {
+    .post {
+      padding: 1em 4%;
+
+      .top {
+        .left {
+          .position {
+            font-weight: 600;
+            font-size: 1.4em;
+          }
+          .organisation {
+            font-size: 1.2em;
+          }
+        }
+        .right {
+          margin: 0.6em 0;
+          .time {
+            float: unset;
+            font-size: 1.1em;
+          }
+        }
+      }
+
+      .points {
+        font-size: 1.1em;
+
+        .point {
+          margin: 0.5em auto;
+        }
+      }
+    }
+  }
+}
