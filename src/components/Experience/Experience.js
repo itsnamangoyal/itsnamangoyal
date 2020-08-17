@@ -69,7 +69,11 @@ const Experience = () => {
             </div>
             <ul className="points">
               {post.points.map((point, index) => {
-                return <li className="point">{point}</li>;
+                return (
+                  <li className="point" key={index}>
+                    {point}
+                  </li>
+                );
               })}
             </ul>
           </div>

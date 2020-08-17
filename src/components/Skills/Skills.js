@@ -12,21 +12,19 @@ const Skills = () => {
       <div className="skills">
         {skillsData.map((skill) => {
           return (
-            <>
-              <div className="skill" key={skill.id}>
-                <h3 className="name">
-                  {skill.name}
-                  <img src={skill.logo} alt="" />
-                </h3>
-                <div className="images">
-                  {skill.images.map((image, index) => {
-                    return <img src={image} alt={index} key={index} />;
-                  })}
-                </div>
-                <p className="content">{skill.content}</p>
+            <div className="skill" key={skill.id}>
+              <h3 className="name">
+                {skill.name}
+                <img src={skill.logo} alt="" />
+              </h3>
+              <div className="images">
+                {skill.images.map((image, index) => {
+                  return <img src={image} alt={index} key={index} />;
+                })}
               </div>
-              <hr className="skill-seperator" key={skill.id}></hr>
-            </>
+              <p className="content">{skill.content}</p>
+              <hr className="skill-seperator"></hr>
+            </div>
           );
         })}
         <div className="last">learning something new...</div>

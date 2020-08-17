@@ -23,10 +23,18 @@ const Contact = () => {
       <div className="right">
         <span>shoot me a message or maybe a mail: </span>
         <div className="social-icons">
-          <img src={linkedin_logo} alt="linkedin logo" />
-          <img src={gmail_logo} alt="gmail logo" />
-          <img src={github_logo} alt="github logo" />
-          <img src={instagram_logo} alt="instagram logo" />
+          <a href="https://linkedin.com/in/namangoyal49" target="blank">
+            <img src={linkedin_logo} alt="linkedin logo" />
+          </a>
+          <a href="mailto:namangoyal4900@gmail.com" target="blank">
+            <img src={gmail_logo} alt="gmail logo" />
+          </a>
+          <a href="https://github.com/itsnamangoyal" target="blank">
+            <img src={github_logo} alt="github logo" />
+          </a>
+          <a href="https://instagram.com/itsnamangoyal" target="blank">
+            <img src={instagram_logo} alt="instagram logo" />
+          </a>
         </div>
       </div>
     </div>
