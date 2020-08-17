@@ -1,11 +1,9 @@
 .skills {
   background-color: rgba(0, 134, 232, 0.73);
   text-align: center;
-  padding: 0 10%;
+  padding: 2em 10%;
 
   .skill {
-    padding: 2em 0;
-
     .name {
       font-size: 2.6em;
       text-transform: uppercase;
@@ -34,6 +32,7 @@
       font-weight: 300;
     }
     .skill-seperator {
+      margin: 5em auto;
       height: 2px;
       border-radius: 20px;
       background-color: white;
@@ -43,7 +42,6 @@
   .last {
     font-weight: normal;
     font-size: 2em;
-    line-height: 4em;
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
@@ -51,8 +49,6 @@
 
 @media screen and (max-width: 1024px) {
   .skills {
-    text-align: center;
-    padding: 0 10%;
 
     .skill {
       .name {
@@ -68,6 +64,9 @@
       .content {
         font-size: 1.6em;
       }
+      .skill-seperator {
+        margin: 4em auto;
+      }
     }
 
     .last {
@@ -78,7 +77,6 @@
 
 @media screen and (max-width: 768px) {
   .skills {
-    padding: 0 10%;
 
     .skill {
       .name {
@@ -93,10 +91,40 @@
       .content {
         font-size: 1.5em;
       }
+      .skill-seperator {
+        margin: 3em auto;
+      }
     }
 
     .last {
       font-size: 1.6em;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .skills {
+
+    .skill {
+      .name {
+        font-size: 1.6em;
+      }
+      .images {
+        img {
+          width: 20em;
+          margin: 0.5em auto;
+        }
+      }
+      .content {
+        font-size: 1.1em;
+      }
+      .skill-seperator {
+        margin: 2em auto;
+      }
+    }
+
+    .last {
+      font-size: 1.2em;
     }
   }
 }

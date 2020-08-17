@@ -34,17 +34,66 @@
         background-color: aliceblue;
         color: black;
         cursor: pointer;
+        transform: scale(1.1);
+      }
+      &:active {
+        transform: scale(0.9);
+        background-color: aliceblue;
+        color: black;
+        cursor: pointer;
       }
     }
   }
   .menu-icon {
     display: none;
     width: 30px;
+    height: 30px;
     margin: auto 0;
+    flex-direction: column;
+
     hr {
       width: 100%;
-      // height: 3px;
       background-color: white;
+    }
+
+    &.open {
+      #mid {
+        opacity: 0;
+        animation: hide-mid-line 0.5s ease-in;
+      }
+      #top {
+        transform: translateY(500%) rotate(45deg);
+        animation: rotate-top-line 0.5s ease-in;
+      }
+      #bottom {
+        transform: translateY(-500%) rotate(-45deg);
+        animation: rotate-bottom-line 0.5s ease-in;
+      }
+
+      @keyframes hide-mid-line {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+      @keyframes rotate-top-line {
+        from {
+          transform: translateY(0) rotate(0);
+        }
+        to {
+          transform: translateY(500%) rotate(45deg);
+        }
+      }
+      @keyframes rotate-bottom-line {
+        from {
+          transform: translateY(0) rotate(0);
+        }
+        to {
+          transform: translateY(-500%) rotate(-45deg);
+        }
+      }
     }
   }
 }
@@ -52,7 +101,38 @@
 @media screen and (max-width: 1024px) {
   .navbar {
     .navbar-nav {
-      display: none;
+      margin: 0;
+      display: flex;
+      position: absolute;
+      background-color: black;
+      right: 0;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10% 0;
+      z-index: -1;
+      transform: translateY(-100%);
+
+      &.open {
+        transform: translateY(0);
+        animation: navbar-drop 0.5s ease-in-out;
+
+        @keyframes navbar-drop {
+          from {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-100%);
+          }
+          to {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+          }
+        }
+      }
+
+      .nav-item {
+        margin: 1em 2em;
+      }
     }
     .menu-icon {
       display: block;

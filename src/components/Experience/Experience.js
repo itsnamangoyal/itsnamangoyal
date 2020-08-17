@@ -13,7 +13,7 @@ const Experience = () => {
   const [index, updateIndex] = useState(0);
   const [post, updatePost] = useState(experienceData[index]);
   const arrowClickHandler = (e) => {
-    console.log(e);
+    console.log(e.target);
     const idOfArrow = e.target.id;
     if (idOfArrow === "left") {
       if (index === 0) {
@@ -35,7 +35,7 @@ const Experience = () => {
 
   return (
     <>
-      <SectionHeader heading="work experience" />
+      <SectionHeader heading="work experience" id="experience" />
       <div className="experience-section">
         <img
           className="arrow"
@@ -43,6 +43,7 @@ const Experience = () => {
           src={arrow}
           alt="left arrow"
           onClick={arrowClickHandler}
+          onTouchEnd={arrowClickHandler}
           style={{ fill: "black" }}
         />
         <img
@@ -51,6 +52,7 @@ const Experience = () => {
           src={arrow}
           alt="right arrow"
           onClick={arrowClickHandler}
+          onTouchEnd={arrowClickHandler}
         />
         <div className="experience-post-list">
           {/* {experienceData.map((post, index) => {

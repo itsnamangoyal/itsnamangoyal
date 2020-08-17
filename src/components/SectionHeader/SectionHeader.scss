@@ -6,3 +6,25 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 1024px) {
+  .section-header {
+    margin: 0.4em auto;
+    font-size: 2em;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-header {
+    margin: 0.4em auto;
+    font-size: 1.8em;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section-header {
+    margin: 0.4em auto;
+    font-size: 1.6em;
+    letter-spacing: 0.04em;
+  }
+}

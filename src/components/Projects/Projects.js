@@ -13,7 +13,7 @@ const Projects = () => {
   const [index, updateIndex] = useState(0);
   const [project, updateProject] = useState(projectsData[index]);
   const arrowClickHandler = (e) => {
-    console.log(e);
+    // console.log(e);
     const idOfArrow = e.target.id;
     if (idOfArrow === "left") {
       if (index === 0) {
@@ -35,7 +35,7 @@ const Projects = () => {
 
   return (
     <>
-      <SectionHeader heading="my projects" />
+      <SectionHeader heading="my projects" id="projects" />
       <div className="projects-section">
         <img
           className="arrow"
@@ -43,6 +43,7 @@ const Projects = () => {
           src={arrow}
           alt="left arrow"
           onClick={arrowClickHandler}
+          onTouchEnd={arrowClickHandler}
         />
         <img
           className="arrow"
@@ -50,6 +51,7 @@ const Projects = () => {
           src={arrow}
           alt="right arrow"
           onClick={arrowClickHandler}
+          onTouchEnd={arrowClickHandler}
         />
         <div className="top">
           <div className="left">

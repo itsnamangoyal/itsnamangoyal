@@ -6,7 +6,7 @@ import my_pic from "../../Assets/my_pic.jpeg";
 
 const About = () => {
   return (
-    <div className="about-section">
+    <div className="about-section" id="about">
       <div className="left">
         <p className="upper">
           Hi, I’m <span>Naman.</span>

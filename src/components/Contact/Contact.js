@@ -13,7 +13,7 @@ const puchline = `I am always looking for something exciting to do. So, If you h
 
 const Contact = () => {
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="contact">
       <div className="left">
         <span>{puchline}</span>
         <span>

@@ -8,15 +8,15 @@ import "./Skills.scss";
 const Skills = () => {
   return (
     <>
-      <SectionHeader heading="what i do?" />
+      <SectionHeader heading="what i do?" id='skills' />
       <div className="skills">
         {skillsData.map((skill) => {
           return (
             <div className="skill" key={skill.id}>
-              <h3 className="name">
+              <h1 className="name">
                 {skill.name}
                 <img src={skill.logo} alt="" />
-              </h3>
+              </h1>
               <div className="images">
                 {skill.images.map((image, index) => {
                   return <img src={image} alt={index} key={index} />;
