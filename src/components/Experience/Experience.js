@@ -13,7 +13,7 @@ const Experience = () => {
   const [index, updateIndex] = useState(0);
   const [post, updatePost] = useState(experienceData[index]);
   const arrowClickHandler = (e) => {
-    console.log(e.target);
+    // console.log(e.target);
     const idOfArrow = e.target.id;
     if (idOfArrow === "left") {
       if (index === 0) {
