@@ -92,10 +92,10 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .contact-section {
-    $icon-size: 4em;
-    padding: 2.5em 10%;
+    $icon-size: 3em;
+    padding: 2.2em 10%;
     flex-direction: column;
 
     .left {
